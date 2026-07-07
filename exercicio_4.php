@@ -30,7 +30,6 @@ function gerarSenha($quantidadeCaracteres)
 }
 
 $quantidadeCaracteres = 10;
-$senhaGerada = gerarSenha($quantidadeCaracteres);
 echo "Quantidade de caracteres: $quantidadeCaracteres <br>";
-echo "Senha gerada: $senhaGerada";
+echo "Senha gerada: " . gerarSenha($quantidadeCaracteres);
  ?>

@@ -6,10 +6,10 @@ Retorne o CPF mascarado -->
 <?php
 function mascararCpf($cpf)
 {
-    // repete o caracter * para o tamanho do cpf menos 4 
-    // e depois usa a função substr para pegar os 4 últimos dígitos do cpf 
+    // repete o caracter * para o tamanho do cpf menos 5 
+    // e depois usa a função substr para pegar os 5 últimos dígitos do cpf 
     // e junta as duas strings
-    $cpfMascarado = str_repeat('*', strlen($cpf) - 4) . substr($cpf, -4);
+    $cpfMascarado = str_repeat('*', strlen($cpf) - 5) . substr($cpf, -5);
     return $cpfMascarado;
 }
 

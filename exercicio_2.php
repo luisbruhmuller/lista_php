@@ -10,11 +10,16 @@ function inverterTexto($texto)
     $textoInvertido = strrev($texto);
     $quantidadeCaracteres = strlen($texto);
 
-    echo "Texto original: $texto <br>";
-    echo "Texto invertido: $textoInvertido <br>";
-    echo "Quantidade de caracteres: $quantidadeCaracteres <br>";
-}
+    return[
+        'textoInvertido' => $textoInvertido,
+        'quantidadeCaracteres' => $quantidadeCaracteres,
+    ];
 
-$texto = "teste texto";
-inverterTexto($texto);
+    }
+    
+    $texto = "teste texto";
+    $resultados = inverterTexto($texto);
+    echo "Texto original: $texto <br>";
+    echo "Texto invertido: " . $resultados['textoInvertido'] . " <br>";
+    echo "Quantidade de caracteres: " . $resultados['quantidadeCaracteres'] . " <br>";
 ?>

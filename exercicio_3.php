@@ -14,9 +14,6 @@ function mascararCpf($cpf)
 }
 
 $cpf = "123.456.789-00";
-
 echo "CPF original: $cpf <br>";
-
-$cpfMascarado = mascararCpf($cpf);
-echo "CPF mascarado: $cpfMascarado";
+echo "CPF mascarado:". mascararCpf($cpf);
 ?>

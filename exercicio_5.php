@@ -6,6 +6,7 @@ Crie uma função chamada analisarTexto() que receba um texto e retorne:
 ● Quantidade de vogais;
 ● Quantidade de consoantes.
  -->
+ 
 
 <?php
 function analisarTexto(string $Texto){
@@ -37,6 +38,7 @@ Crie uma função chamada analisarTexto() que receba um texto e retorne:
 ● Quantidade de vogais;
 ● Quantidade de consoantes.
 ";
+
 echo "texto exemplo: $texto <br>";
 echo "quantidade palavras:". analisarTexto($texto)['quantidadepalavras'];
 echo "<br>quantidade caracteres:". analisarTexto($texto)['quantidadecaracteres'];

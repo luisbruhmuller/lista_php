@@ -7,12 +7,13 @@ desnecessários, ordenar em ordem alfabética e retornar a lista organizada.
 
 <?php
 function ordenarNomes(string $nomes){
-    // Transformar a string em um vetor, removendo espaços desnecessários
     $vetorNomes = array_map('trim', explode(',', $nomes));
 
-    // Ordenar o vetor em ordem alfabética
     sort($vetorNomes);
 
-    // Retornar a lista organizada como uma string
     return implode(', ', $vetorNomes);
 }
+$nomes = "João, Maria, Ana, Pedro, Carlos";
+$nomesOrganizados = ordenarNomes($nomes);
+echo "Nomes originais: $nomes <br>";
+echo "Nomes organizados: $nomesOrganizados";
